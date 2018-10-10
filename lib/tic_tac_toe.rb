@@ -111,6 +111,7 @@ def winner(board)
 end
 
 def play(board)
+<<<<<<< HEAD
   if winner(board) == "X"
     puts "Congratulations X!"
   elsif winner(board) == "O"
@@ -123,3 +124,25 @@ def play(board)
   play(board)
 end
 end
+=======
+ while !over?(board)
+  turn(board)
+end
+#do i need if won?(board)
+  if winner(board) == "X"
+    "Congratulations X!"
+  elsif winner(board) == "O"
+    "Congratulations O!"
+  elsif draw?(board)
+    "Cat's Game!"
+  else 
+    play(board)
+  end
+end
+
+
+    
+  
+  
+
+>>>>>>> 21867526fccc5a3fcb7039052b626c42b185f706
